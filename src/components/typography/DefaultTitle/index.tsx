@@ -2,14 +2,14 @@ import React from 'react';
 
 import { StyleSheet, Text } from 'react-native';
 import theme from '@styles/Theme';
-import appInfo from '../../../app.json';
-import * as S from './style';
 
-const Home: React.FC = () => (
-  <S.Wrapper>
-    <Text style={styles.title}>{`Hello ${appInfo.name}`}</Text>
-  </S.Wrapper>
-);
+type DefaultTitleProps = {
+  children: React.ReactNode;
+};
+
+const DefaultTitle: React.FC = ({ children }: DefaultTitleProps) => {
+  return <Text style={styles.title}>{children}</Text>;
+};
 
 const styles = StyleSheet.create({
   title: {
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default DefaultTitle;

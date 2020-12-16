@@ -1,12 +1,7 @@
 import React from 'react';
 
-import Routes from '@routes/index';
-import Home from '@pages/Home';
+import Home from '@components/pages/Home';
 
-const App: React.FC = () => (
-  // Para usar o sistema de rotas, basta descomentar a linha abaixo
-  // <Routes />
-  <Home />
-);
+const App: React.FC = () => <Home />;
 
 export default App;
