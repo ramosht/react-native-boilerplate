@@ -7,7 +7,7 @@ type DefaultTitleProps = {
   children: React.ReactNode;
 };
 
-const DefaultTitle: React.FC = ({ children }: DefaultTitleProps) => {
+const DefaultTitle: React.FC<DefaultTitleProps> = ({ children }) => {
   return <Text style={styles.title}>{children}</Text>;
 };
 
