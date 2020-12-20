@@ -1,7 +1,11 @@
-import React from 'react';
+import Storybook from '../storybook';
 
-import Home from '@components/pages/Home';
+export default Storybook;
 
-const App: React.FC = () => <Home />;
+// import React from 'react';
 
-export default App;
+// import Home from '@components/pages/Home';
+
+// const App: React.FC = () => <Home />;
+
+// export default App;
